@@ -38,6 +38,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(html|ejs)$/,
+                use: ['html-loader', 'ejs-html-loader']
+            },
+            {
                 test: /\.scss$/, // Any file ends with .scss
                 use: scssLoaders
             },
