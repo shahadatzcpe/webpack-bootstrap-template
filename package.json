@@ -1,0 +1,43 @@
+{
+  "name": "webpack-bootstrap-template",
+  "version": "1.0.0",
+  "description": "Webpack Bootstrap development environment template",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "MODE=dev webpack",
+    "webpack-dev": " MODE=dev webpack --watch",
+    "webpack-dev-server": "MODE=dev webpack-dev-server",
+    "webpack-build": "MODE=production webpack -p"
+  },
+  "keywords": [
+    "webpack",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Antonio José Masiá",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "exports-loader": "^0.7.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.4",
+    "image-webpack-loader": "^4.1.0",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
+    "reset-css": "^2.2.1"
+  }
+}
