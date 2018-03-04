@@ -3,6 +3,12 @@
 
 To install this template run `npm i` from root directory.
 
+## Webpack config support
+- Ejs templates
+- SASS
+- Babel trasnpiler 
+- Assets loaders with image optimizations
+
 ## Start scripts
 
 | Command  | Mode |
