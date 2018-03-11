@@ -17,6 +17,8 @@ To install this template run `npm i` from root directory.
 | `npm run webpacl-dev` | Execute webpack in changes observe dev mode |
 | `npm run webpack-dev-server` | Execute webpack with automatic browser reload dev server |
 | `npm run webpack-build` | Execute webpack in production mode |
+| `npm run json-server` | Run json-server in observe mode |
+| `npm run json-server-build` | Run json-server in static web server and observe mode to test webpack builds apps |
 
 ## More information
 
