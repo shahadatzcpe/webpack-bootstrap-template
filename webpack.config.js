@@ -26,25 +26,17 @@ if (isProduction) {
 }
 
 
-// Webpack congig
+// Webpack config
 module.exports = {
     // Entry point: File to build the dependency graph
-    entry: path.join(__dirname, 'src', 'entry.js'),
+    entry: ['babel-polyfill', path.join(__dirname, 'src', 'entry.js')],
     // Output: Generated code folder
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
-            {
-                test: /\.(html|ejs)$/,
-                use: ['html-loader', 'ejs-html-loader']
-            },
-            {
-                test: /\.scss$/, // Any file ends with .scss
-                use: scssLoaders
-            },
             {
                 test: /\.js$/,
                 use: 'babel-loader',
@@ -59,6 +51,10 @@ module.exports = {
             }, {
                 test: /assets.[^img]/,
                 use: 'file-loader?name=[name].[ext]&useRelativePath=true'
+            },
+            {
+                test: /\.scss$/, // Any file ends with .scss
+                use: scssLoaders
             }
         ]
     },
